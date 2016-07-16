@@ -142,7 +142,10 @@ hr.small {
 }
 
 .home-header {
-
+  background: url("child.jpg") center;
+  
+  
+  
 }
 
 .intro-header .site-heading,
