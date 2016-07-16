@@ -142,7 +142,8 @@ hr.small {
 }
 
 .home-header {
-  background: url("/assets/child.jpg") center;
+  /* background: url("/assets/child.jpg") center; */
+  background-image: url('child.jpg');
 }
 
 .intro-header .site-heading,
