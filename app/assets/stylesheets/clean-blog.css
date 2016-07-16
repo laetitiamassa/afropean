@@ -140,6 +140,11 @@ hr.small {
   -o-background-size: cover;
   margin-bottom: 20px;
 }
+
+.home-header {
+
+}
+
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
