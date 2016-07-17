@@ -1,19 +1,27 @@
-<p id="notice"><%= notice %></p>
+<header class="intro-header" style="background-image: url(/assets/afropean.jpg)">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1><%= @article.title %></h1>
+                    <hr class="small">
+                    <span class="subheading">
+                      <%= @article.subtitle %>
+      
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
 
-<p>
-  <strong>Subtitle:</strong>
-  <%= @article.subtitle %>
-</p>
-
-<p>
-  <strong>Content:</strong>
+ <article>
+    <div class="container event_show">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
   <%= @article.content %>
-</p>
-
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+</div>
+</div>
+</div>
+</article>

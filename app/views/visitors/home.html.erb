@@ -25,7 +25,7 @@
                 <%= link_to event do %>
                     <h4 class="post-title">
                         <%= event.title %>
-                         <small><%= event.subtitle %></small>
+                         <br><small><%= event.subtitle %></small>
                     </h4>
                     <h5 class="post-subtitle">
                         <%= event.description %>
@@ -43,23 +43,30 @@
             </div>
             <hr>
 
-
-
-
-
-
-        <!--<td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
      
     <% end %>
-			<small><%= link_to "All events", events_path, class: "pull-right btn btn-default" %></small>
+			<small><%= link_to "See all our future events", events_path, class: "pull-right btn btn-default" %></small>
 		</div>
+
+
 		<div class="col-md-4">
 			<h3 class="page-header">
 				News
 				
 			</h3>
-			<small><%= link_to "All news", articles_path, class: "pull-right btn btn-default" %></small>
+			<% @articles.each do |article| %>
+			 <div class="post-preview">
+                <%= link_to article do %>
+                    <h5 class="post-title">
+                         <small><%= article.title %></small>
+                    </h5>
+                    <h5 class="post-subtitle">
+                        <%= article.subtitle %>
+                    </h5>
+                <% end %>
+            </div>
+            <% end %>
+			<small><%= link_to "See all our articles", articles_path, class: "pull-right btn btn-default" %></small>
 		</div>
 	</div>
 </div>
