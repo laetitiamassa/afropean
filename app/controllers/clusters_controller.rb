@@ -5,6 +5,9 @@ class ClustersController < ApplicationController
   # GET /clusters.json
   def index
     @clusters = Cluster.all
+    @first_cluster = Cluster.first
+    @second_cluster = Cluster.first(2).last
+    @third_cluster = Cluster.first(3).last
   end
 
   # GET /clusters/1
